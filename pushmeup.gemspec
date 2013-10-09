@@ -3,12 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "pushmeup/version"
 
 Gem::Specification.new do |s|
-  s.name            = 'pushmeup'
+  s.name            = 'chaione-pushmeup'
   s.version         = Pushmeup::VERSION
-  s.authors         = ["Nicos Karalis"]
-  s.email           = ["nicoskaralis@me.com"]
+  s.authors         = ["Nicos Karalis", "Chris Mason", "Yujing Zheng"]
+  s.email           = ["nicoskaralis@me.com", "chris.mason@chaione.com", "yujing.zheng@chaione.com"]
   
-  s.homepage        = "https://github.com/NicosKaralis/pushmeup"
+  s.homepage        = "https://github.com/chaione/pushmeup"
   s.summary         = %q{Send push notifications to Apple devices through ANPS and Android devices through GCM}
   s.description     = <<-DESC
                         This gem is a wrapper to send push notifications to devices.
@@ -16,9 +16,11 @@ Gem::Specification.new do |s|
 
                         With APNS (Apple Push Notifications Service) you can send push notifications to Apple devices.
                         With GCM (Google Cloud Messaging) you can send push notifications to Android devices.
+                        
+                        Forked from https://github.com/NicosKaralis/pushmeup
                       DESC
 
-  s.rubyforge_project = "pushmeup"
+  s.license           = 'MIT'
   
   s.files             = `git ls-files`.split("\n")
   s.test_files        = `git ls-files -- {test,spec,features}/*`.split("\n")
